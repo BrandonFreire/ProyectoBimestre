@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="VevtqfHYLRV94XmZ_G4F" name="Página-1">
-        <mxGraphModel dx="1614" dy="731" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
+        <mxGraphModel dx="1249" dy="731" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -16,20 +16,17 @@
                 <mxCell id="6" value="ARDUINO" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
                     <mxGeometry x="1070" y="660" width="30" height="60" as="geometry"/>
                 </mxCell>
+                <mxCell id="47" style="edgeStyle=none;html=1;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="8" target="11">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
                 <mxCell id="8" value="&lt;span style=&quot;&quot;&gt;Aproximar el vehiculo al sensor&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="380" y="725" width="150" height="70" as="geometry"/>
+                    <mxGeometry x="395" y="710" width="150" height="70" as="geometry"/>
                 </mxCell>
                 <mxCell id="11" value="&lt;span style=&quot;&quot;&gt;Detectar el movimiento dentro del rango&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="585" y="550" width="150" height="70" as="geometry"/>
+                    <mxGeometry x="580" y="550" width="150" height="70" as="geometry"/>
                 </mxCell>
                 <mxCell id="12" value="&lt;span style=&quot;&quot;&gt;Enviar una señal al sistema correcta o incorrecta&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="680" y="670" width="160" height="70" as="geometry"/>
-                </mxCell>
-                <mxCell id="16" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;shape=link;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=1;exitDx=0;exitDy=0;" parent="1" source="11" target="8" edge="1">
-                    <mxGeometry width="160" relative="1" as="geometry">
-                        <mxPoint x="470" y="690" as="sourcePoint"/>
-                        <mxPoint x="630" y="690" as="targetPoint"/>
-                    </mxGeometry>
                 </mxCell>
                 <mxCell id="17" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;shape=link;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="11" target="12" edge="1">
                     <mxGeometry width="160" relative="1" as="geometry">
@@ -44,40 +41,25 @@
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="19" value="&amp;nbsp;Abrir la puerta si hay movimiento" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="540" y="782" width="170" height="80" as="geometry"/>
+                    <mxGeometry x="600" y="820" width="145" height="70" as="geometry"/>
                 </mxCell>
-                <mxCell id="20" style="html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;endArrow=none;endFill=0;" parent="1" source="19" edge="1">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="800" y="872.5" as="sourcePoint"/>
-                        <mxPoint x="1070" y="930" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="21" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;shape=link;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="12" target="19" edge="1">
+                <mxCell id="21" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;shape=link;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="12" target="19" edge="1">
                     <mxGeometry width="160" relative="1" as="geometry">
                         <mxPoint x="770" y="800" as="sourcePoint"/>
                         <mxPoint x="930" y="800" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="22" value="&lt;span style=&quot;&quot;&gt;Mantener la puerta cerrada si no hay movimiento&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="800" y="795" width="150" height="70" as="geometry"/>
+                    <mxGeometry x="795" y="820" width="150" height="70" as="geometry"/>
                 </mxCell>
                 <mxCell id="23" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;shape=link;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="12" target="22" edge="1">
                     <mxGeometry x="-0.2545" y="-8" width="160" relative="1" as="geometry">
                         <mxPoint x="760" y="760" as="sourcePoint"/>
                         <mxPoint x="585" y="830" as="targetPoint"/>
                         <Array as="points">
-                            <mxPoint x="850" y="770"/>
+                            <mxPoint x="840" y="770"/>
                         </Array>
                         <mxPoint as="offset"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="24" style="html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;endArrow=none;endFill=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="19" target="6" edge="1">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="840" y="725" as="sourcePoint"/>
-                        <mxPoint x="1040" y="650" as="targetPoint"/>
-                        <Array as="points">
-                            <mxPoint x="860" y="760"/>
-                        </Array>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="28" value="&lt;span style=&quot;&quot;&gt;Registrar vehículo&lt;br&gt;&amp;lt;&amp;lt;Java&amp;gt;&amp;gt;&lt;br&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -126,12 +108,6 @@
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="760" y="605" as="sourcePoint"/>
                         <mxPoint x="1014.9999999999995" y="480" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="45" style="html=1;exitX=0.528;exitY=0.708;exitDx=0;exitDy=0;endArrow=none;endFill=0;exitPerimeter=0;" edge="1" parent="1" source="6">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="761" y="890" as="sourcePoint"/>
-                        <mxPoint x="1070" y="930" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
             </root>
